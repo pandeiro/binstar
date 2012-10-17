@@ -1,7 +1,7 @@
 #!/bin/bash
 
 E_BADARGS=65
-USAGE="Changes kb layout\n\nUsage: $0 [ -u | -i | -b ]\n\nOptions:\n    -u us\n    -i us intl\n    -b br\n"
+USAGE="Changes kb layout\n\nUsage: $0 [ -u | -i | -b ]\n\nOptions:\n-u us\n-i us intl\n-b br\n"
 
 if [ $# -ne 1 ]; then
     echo -ne "$USAGE"
