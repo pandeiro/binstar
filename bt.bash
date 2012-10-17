@@ -3,7 +3,8 @@
 echo "Starting Deluge server and connecting..."
 
 # if no Deluge server process can be found
-if [ $(pgrep deluge-web) -ne 0 ]; then
+pgrep deluge-web
+if [ $? -eq 1 ]; then
     # Launch Deluge in another process
     deluge-web &
 fi
