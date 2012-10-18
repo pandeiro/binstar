@@ -23,13 +23,13 @@ min=0; low=400; medium=575; high=750; max=976
 current_level=$(<$brightness)
 
 if [ $1 -ge $min ] && [ $1 -le $max ]; then
-    new_value=$1
+    new_level=$1
 elif [ $current_level -eq $max ]; then
-    new_value=$low
+    new_level=$low
 elif [ $current_level -lt $low ]; then
-    new_value=$low
+    new_level=$low
 elif [ $current_level -le $medium ]; then
-    new_value=$medium
+    new_level=$medium
 elif [ $current_level -le $high ]; then
     new_level=$high
 else
