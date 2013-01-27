@@ -16,6 +16,7 @@ case $# in
 	    for r in *; do
 		if [ -d "$r" ] && [ -d "$r/.git" ]; then
 		    cd "$r"
+		    echo "Updating $r"
 		    git $cmd
 		    cd ..
 		fi
